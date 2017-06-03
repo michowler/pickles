@@ -26,7 +26,7 @@ html,body,#content{height:100vh;overflow:hidden;}
   font-weight:bold;
   font-size:5vw;
   line-height:120px;
-  top:40%;
+  top:50%;
   left:50%;
   color:black;
   -webkit-transform:translate(-50%, -50%);
@@ -79,13 +79,13 @@ html,body,#content{height:100vh;overflow:hidden;}
   z-index:7;
   height:80%;
   width:50%;
-  animation-duration:120s;
+  animation-duration:80s;
   animation-timing-function:ease-in;
 }
 .layer.cloud.three img{
   z-index:5;
   bottom:320px;
-  animation-duration:100s;
+  animation-duration:80s;
   animation-timing-function:ease-in;
 }
 @keyframes cloud {from{right:0;}to{right:2000px;}}
