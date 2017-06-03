@@ -26,8 +26,8 @@ html,body,#content{height:100vh;overflow:hidden;}
   font-weight:bold;
   font-size:5vw;
   line-height:120px;
-  top:20%;
-  left:25%;
+  top:40%;
+  left:50%;
   color:black;
   -webkit-transform:translate(-50%, -50%);
   -moz-transform:translate(-50%, -50%);
@@ -39,6 +39,12 @@ html,body,#content{height:100vh;overflow:hidden;}
   text-align:center;
   font-family:'Josefin Sans', sans-serif;
   mix-blend-mode:overlay;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  letter-spacing: .1em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret 1s step-end infinite;
 
 }
 /*Mountains*/
@@ -83,3 +89,9 @@ html,body,#content{height:100vh;overflow:hidden;}
   animation-timing-function:ease-in;
 }
 @keyframes cloud {from{right:0;}to{right:2000px;}}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 60% }
+}
