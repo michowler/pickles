@@ -1,11 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:700);
-html,body,#content{height:100vh;overflow:hidden;}
+.pickles,#content{height:100vh;}
+
 #content {
   background:url('https://anaislab.com/tutoriales/img/background.jpg')no-repeat 0 0;
-  background-attachment:fixed;
   background-size:cover;
   position:relative;
-
+  height:100%;
 }
 #content:after {
   content:'';
