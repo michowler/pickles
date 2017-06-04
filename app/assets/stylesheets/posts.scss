@@ -2,7 +2,6 @@
 body {
 	color: #333;
 	font-weight: 300;
-	overflow: scroll;
 }
 
 h1,
@@ -69,10 +68,11 @@ h2 span {
 figure {
 	width: 300px;
 	height: 200px;
-	margin: 0;
+	margin: 50px;
 	padding: 0;
 	background: #fff;
 	overflow: hidden;
+	border:solid;
 }
 figure:hover+span {
 	bottom: -36px;
@@ -173,6 +173,9 @@ figure:hover+span {
 .hover08 figure:hover img {
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
+	transition: .3s ease-in-out;
+	width:100%;
+	height:100%
 }
 
 /* Sepia */

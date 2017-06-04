@@ -1,5 +1,10 @@
 class WelcomeController < ApplicationController
 	def index
-		@post = Post.new
-	end	
+	end
+
+	def about
+	end
+
+	def contacts
+	end
 end
