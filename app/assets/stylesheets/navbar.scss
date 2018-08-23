@@ -1,9 +1,17 @@
 .navbar .navbar-nav {
     display: inline-block;
-    float: none;
-    background:transparent;
+    float: none;    
 }
+
+.navbar-nav:hover {
+    display: inline-block;
+    float: none; 
+    font-size: 35px;
+}
+
 .navbar .navbar-collapse {
-    text-align: center;
-    background:transparent;
+	font-family:'Nanum pen script', sans-serif;
+	font-size: 30px;
+    text-align: center;    
+    background-color: transparent rgba(255,2155,255,0.5);
 }
