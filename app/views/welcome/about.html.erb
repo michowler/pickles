@@ -9,7 +9,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+body{font-family: "Montserrat", sans-serif; color: black;background-color: #ffffff;
+  background-image: linear-gradient(2deg, #ffffff 0%, #97D9E1 24%, #D9AFD9 49%, #f39494 75%, #f9da7f 100%);}
+   h1,h2,h3,h4,h5,h6 {font-family: "Montserrat"}
 .w3-row-padding img {margin-bottom: 12px}
 /* Set the width of the sidebar to 120px */
 .w3-sidebar {width: 120px;background: #222;}
@@ -18,25 +20,29 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
-<body class="w3-black">
+<body>
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-black">
   <!-- Avatar image in top left corner -->
-  <img src="assets/mich3.JPG" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+  <img src="assets/me.JPG" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large ">
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
   </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large ">
     <i class="fa fa-user w3-xxlarge"></i>
     <p>ABOUT</p>
   </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
+  <a href="#portfolio" class="w3-bar-item w3-button w3-padding-large">
+    <i class="fa fa-book w3-xxlarge"></i>
     <p>PORTFOLIO</p>
   </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large">
+    <i class="fa fa-photo w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large ">
     <i class="fa fa-envelope w3-xxlarge"></i>
     <p>CONTACT</p>
   </a>
@@ -45,9 +51,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#home" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
     <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PORTFOLIO</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" style="width:25% !important">PORTFOLIO</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
     <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
   </div>
 </div>
@@ -55,17 +62,17 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <!-- Page Content -->
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Michelle Ler.</h1>
-    <p>Artist, Software Developer, Journalist, and Director.</p>
-    <img src="assets/mich2.JPG" alt="michelle" class="w3-image" width="992" height="1108">
+  <header class="w3-container w3-padding-32 w3-center" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">Hey, I'm</span> Michelle Ler.</h1>
+    <p>Software Developer / Creative Director.</p>
+    <img src="assets/mich2.JPG" alt="michelle" class="w3-image" width="752" height="908">
   </header>
 
   <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+  <div class="w3-content w3-justify w3-padding-64" id="about">
     <h2 class="w3-text-light-grey">What about me?</h2>
-    <hr style="width:280px" class="w3-opacity">
-    <p>Hi everyone, I'm an enthusiatic 21 y.o female coder. But besides programming, I cannot let go my other side jobs I enjoy doing. I have my own home music studio as love singing/songwriting. Also, I enjoy traveling; traveling while taking photographs and writing journals just like a journalist, duh! Other than that, I make videos -- food related videos because, "Foodie here!". I think I still have a long way to go, nothing beats my undying passion to gain new experience and new connections.
+    <hr style="width:280px">
+    <p>Hi everyone, I'm an enthusiatic 21 y.o female programmer. I'm a freelance developer/organizer/mentor besides being a full-time university student. But besides programming, I just can't leave my other side interests alone. I have my own home music studio as love singing/songwriting. I post my piano song sovers on Youtube and my song covers on Soundcloud. Also, I enjoy reading, hiking, dancing and traveling; traveling while taking photographs and writing journals just like a journalist (it's the best)! You can check out 365 days of quote on facebook, it's a page I've created for me to share my creations. Other than that, I have another Youtube channel which I post videos -- food related videos because, "Foodie here!", but I'm only active once in awhile on Youtube. I'm profoundly interested in many different things at once and obviously I can't spend the time listing everything here, but that's the general gist of who I am! I think I still have a long way to go, nothing beats my undying passion to gain new experience and new connections. You can download my resume down here if you would like to hire me as a freelance developer/organizer/mentor!
     </p>
 
     <button class="w3-button w3-light-grey w3-padding-large w3-section">
@@ -77,17 +84,18 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </div>
   
   <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
+  <div class="w3-padding-64 w3-content" id="portfolio">
     <h2 class="w3-text-light-grey">Some of my projects!</h2>
-    <%= link_to "My Certification", "http://s3-ap-southeast-1.amazonaws.com/next-academy-site/uploads/certificates/michelle-ler-hsin-yee-4e0684ff-ce2a-4400-9abd-df6c2c51fa99/b0d0c09ca9.", target: :_blank, class:"btn btn-lg btn-default" %>
+      <%= link_to "My Certification", "http://s3-ap-southeast-1.amazonaws.com/next-academy-site/uploads/certificates/michelle-ler-hsin-yee-4e0684ff-ce2a-4400-9abd-df6c2c51fa99/b0d0c09ca9.", target: :_blank, class:"btn btn-lg btn-default" %>
   <%= link_to "Github", "https://github.com/michowler", target: :_blank, class:"btn btn-lg btn-default" %>
     <hr style="width:360px" class="w3-opacity">
+  
 
     <!-- Grid for photos -->
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half">
         <a href="https://nextlineup.herokuapp.com"><img src="assets/lineup.png" style="width:100%"></a>
-        <p>Lineup is a Leave Management System with features such as fast notifications, approval, statistics and request history to manage leave request from employees with a new and bright interface.</p>
+        <p>Lineup is a Leave Management System with features such as fast notifications, approval, statistics and request history with a new and bright interface.</p>
         <a href="https://pukes.herokuapp.com"><img src="assets/pukes.png" style="width:100%"></a>
         <p>Pukes is a project that focuses on delivering a platform to engage between close friends. It's almost like a place to 'puke' their feelings or confessions to someone depending who set their view to.</p>
        
@@ -95,7 +103,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
       <div class="w3-half">
         <a href="https://short-links-app.herokuapp.com"><img src="assets/short-links.png" style="width:100%"></a>
-        <p>Short links is a mini project made to shorten links just like bit and google url. It also counts the number of clicks as a feature.</p>
+        <p>Short links is a mini project made to shorten links just like bit and google url. It also counts the number of clicks as a feature. It's one of my very first project too!</p>
         <a href="https://joahh.herokuapp.com"><img src="assets/joahh.png" style="width:100%"></a>
         <p>Joahh is a system made to cater to those thrifters out there searching, a new home for their used items. People who have similar interest in trading their items can engage with each other through this platform.</p>
         
@@ -105,9 +113,46 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <!-- End Portfolio Section -->
   </div>
 
+    <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">365 Days of Quote!</h2> 
+    <%= link_to "Facebook Page", "https://www.facebook.com/365daysofquote/", target: :_blank, class:"btn btn-lg btn-default" %>  
+    <hr style="width:360px" class="w3-opacity">
+      
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <a href="https://www.facebook.com/365daysofquote/"><img src="assets/dog1.JPG" style="width:100%"></a>
+        <a href="https://www.facebook.com/365daysofquote/"><img src="assets/food.JPG" style="width:100%"></a>
+        <a href="https://www.facebook.com/365daysofquote/"><img src="assets/land1.JPG" style="width:100%"></a>
+        <a href="https://www.facebook.com/365daysofquote/"><img src="assets/girl.JPG" style="width:100%"></a>
+        <a href="https://www.facebook.com/365daysofquote/"><img src="assets/tree.JPG" style="width:100%"></a>
+        <a href="https://www.facebook.com/365daysofquote/"><img src="assets/on.JPG" style="width:100%"></a>
+       
+       
+      </div>
+
+      <div class="w3-half">
+        <a href="https://www.facebook.com/365daysofquote/"><img src="assets/on4.JPG" style="width:100%"></a>
+      <a href="https://www.facebook.com/365daysofquote/"><img src="assets/on2.JPG" style="width:100%"></a>
+      <a href="https://www.facebook.com/365daysofquote/"><img src="assets/dog2.JPG" style="width:100%"></a>
+      <a href="https://www.facebook.com/365daysofquote/"><img src="assets/on8.JPG" style="width:100%"></a>
+      <a href="https://www.facebook.com/365daysofquote/"><img src="assets/night.JPG" style="width:100%"></a>
+      <a href="https://www.facebook.com/365daysofquote/"><img src="assets/land2.JPG" style="width:100%"></a>
+      
+        
+     
+        
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
   <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">How to reach me?</h2>
+  <div class="w3-padding-64 w3-content" id="contact">
+    <h2 class="">How to reach me?</h2>
     <hr style="width:250px" class="w3-opacity">
 
     <div class="w3-section">
